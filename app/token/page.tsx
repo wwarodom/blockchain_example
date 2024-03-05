@@ -112,7 +112,7 @@ export default function TokenPage() {
     },[name, symbol])
 
     return (<div className="min-h-screen flex items-center justify-center bg-gray-50">
-        <div className="p-8 bg-white rounded shadow-md">
+        <div className="p-8 bg-white rounded shadow-md mb-16">
             <h1 className="text-2xl font-bold mb-4">Token Interaction</h1>
 
             {tokenBalance && <p>Token Balance: {ethers.formatEther(tokenBalance)}</p>}
