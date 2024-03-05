@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { ethers } from 'ethers';
 
+
 export default function TransferEther() {
 
     const [userAddress, setUserAddress] = useState(''); 
@@ -66,7 +67,7 @@ export default function TransferEther() {
     return (
         <div className="container mx-auto p-4">
             <h1 className="text-2xl font-semibold mb-4">Ethereum Transfer</h1>
-
+                
             {userAddress ? (
                 <div>
                     <p>Your Ethereum Address: {userAddress}</p>

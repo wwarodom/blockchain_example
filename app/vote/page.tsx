@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { ethers } from 'ethers';
 import Ballot1ABI from '../../contract/abi/Ballot1.json';
 
-const contractAddress = '0xc0452684eBB39D6b68c04FDcE47E7c7c910e1d2C'; // Replace with the actual contract address
+const contractAddress = '0xeeb3570019b79F5681f140a599B05A403994603E'; // Replace with the actual contract address
 
 const getSigner = async () => {
     const provider = new ethers.BrowserProvider((window as any).ethereum);
@@ -81,7 +81,10 @@ export default function Home() {
           Get Winner
         </button>
         {winner && <p className="mt-4">The winner is: {winner}</p>}
-      </div>
+         
+        <div className="mt-4 italic text-sm">* Need to redeploy a contract (./contract/Ballot1.sol)</div>
+        <div className="italic text-sm"> and change a contract address (./app/vote/page.tsx) </div>
+      </div> 
     </div>
   );
 }

@@ -134,6 +134,8 @@ export default function TokenPage() {
             <button onClick={transferToken} className="ml-2 bg-green-500 text-white px-4 py-2 rounded">Transfer Token</button>
             <button onClick={getTokenBalance} className="ml-2 bg-yellow-500 text-white px-4 py-2 rounded">Balance</button>
         
+            <div className="mt-4 italic text-sm">* Need to redeploy a contract (./contract/MyToken.sol)</div>
+            <div className="italic text-sm"> and change a contract address (./app/token/page.tsx) </div>
         </div>
     </div>
     );
