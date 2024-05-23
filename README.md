@@ -12,3 +12,7 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+
+### My advertisement (including student projects)
+[Werapun.com book](https://werapun.com/blockchain-and-smart-contract-development-b7f2466a408f)
